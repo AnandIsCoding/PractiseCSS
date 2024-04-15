@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		body{
+			height:100%;
+			width:100%;
+		}
+		nav{
+			background-color:rgb(175, 241, 241);
+			height:50px;
+			width:100%;				
+		}
+		ul{
+			display:flex;
+			justify-content: flex-start;
+		}
+		li{
+			list-style-type: none;
+			margin-left:90px;
+			margin-top:15px;
+		}
+		li:hover{
+			color:white;
+		}
+		li:nth-child(1) {
+    		border-style: solid; 
+		}
+		li:nth-child(2){
+			border-style:dotted;
+		}
+		li:nth-child(3){
+			border-style:double;
+		}
+		li:nth-child(4){
+			border-style:groove;
+		}
+		li:nth-child(5){
+			border-style:hidden;
+
+		}
+		
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li>Home</li>
+			<li>About us</li>
+			<li>Contact</li>
+			<li>Blog</li>
+			<li>Services</li>
+		</ul>
+	</nav>
+</body>
+</html>
