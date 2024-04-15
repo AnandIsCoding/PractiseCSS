@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		form{
+			background-color: azure;
+		}
+		label{
+			font-size: medium;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+		}
+		button{
+			height:40px;
+			width:70px;
+			background-color: greenyellow;
+			border:2px solid green;
+			border-radius:10%;
+		}
+		input{
+			background-color:rgb(247, 242, 219);
+		}
+
+		button{
+			opacity:0.5;
+		}
+
+	</style>
+</head>
+<body>
+	<form  >
+		<fieldset >
+			<legend>Sign-Up</legend>
+			<label for="fname">Enter your First Name </label>
+			<input type="text" name="fname" id="fname" placeholder="first name" minlength="3" required>
+			<br><br>
+			<label for="eml">Enter you email account</label>
+			<input type="email" name="eml" id="eml" placeholder="Email account" minlength="3" required>
+			<br><br>
+			<label for="pswd">Enter password</label>
+			<input type="password" placeholder="password" name="pswd" id="pswd">
+			<br><br>
+			<label for="ag">Enter your age</label>
+			<input type="number" name="ag" id="ag" min="0" max="130" required>
+			<br><br>
+			<label for="gen">choose your gender</label>
+			<select name="gen" id="gen">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="thers">Others</option>
+			</select>
+			<br><br>
+			<label for="t&c">I accept Term & conditions</label>
+			<input type="radio" name="t&c" id="t&c" value="accepted" required>
+			<br><br>
+			<button type="submit">Submit</button>
+		</fieldset>
+	</form>
+
+
+</body>
+</html>
