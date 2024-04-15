@@ -1,0 +1,19 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body{
+	height:100%;
+	width:100%;
+}
+.box1{
+	/* targeting div and appling css */
+	width:170px;
+	height:160px;
+	background-color:rgb(150, 234, 234);
+}
+
+
+/* External css applied here */
