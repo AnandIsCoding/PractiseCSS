@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		body{
+			width:100%;
+			height:100%;
+		}
+		.container{
+			width:100wh;
+			height:100vh;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			/* margin-top: 9%; */
+			background-color:silver;
+		}
+		.box{
+			margin:25px 25px 25px 25px;
+			width:300px;
+			height:400px;
+			margin-left: 30px;
+			border-radius:8%;
+		}
+		
+		.box1{
+			background-color: white;
+			display:flex;
+			flex-direction: column;
+			justify-content:flex-start;
+			align-items:flex-start;
+		}
+		.name{
+			margin-top: 20px;
+			margin-left: 20px;
+		}
+		.dollar{
+			margin-top: 8px;
+		}
+		
+		.box2{
+			background-color:rgb(46, 36, 36);
+			color:white;
+		}
+		.box3{
+			background-color: white;
+		}
+		
+	     button {
+			
+			width:150px;
+			height:50px;
+			background-color: black;
+			border-radius:30px;
+			color:white;
+			margin-left: 45%;
+			margin-top: 30%;
+		}
+		.btn3{
+			width:150px;
+			height:50px;
+			background-color: black;
+			border-radius:30px;
+			color:white;
+			margin-left: 25%;
+			margin-top: 15%;
+		}
+		.btn2{
+			background-color: white;
+			color:black;
+
+		}
+		/* list */
+		ul{
+			display:flex;
+			flex-direction:column;
+			justify-content: center;
+			align-items:flex-start;
+		}
+		ul {
+            list-style: none;
+            padding-left: 50px;
+			margin-top: 20px;
+        }
+        li {
+            position: relative;
+            padding-left: 25px;
+			margin-top: 5px;
+        }
+        li::before {
+            content: "\2713";
+            color: green;
+            font-size: 1.2em;
+            position: absolute;
+            left: 0;
+        }
+		
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!--Box 1 -->
+		<div class="box box1">
+			<div class="name">
+				<h1>Free Plan</h1>
+				<p>For Personal</p>
+				<h1 class="dollar">$0</h1>
+			</div>
+			<div class="list">
+				<ul>
+					<li><h3>1 User</h3></li>
+					<li><h3>4 Web mails</h3></li>
+					<li><h3>Responsive website</h3></li>
+					<li><h3>Free SSL</h3></li>
+				</ul>
+			</div>
+			<div class="btn">
+				<button><h3>Subscribe Now</h3></button>
+			</div>
+		</div>
+		<!--Box 2 -->
+		<div class="box box2">
+			<div class="name">
+				<h1>Basic Plan</h1>
+				<p>For Small Business</p>
+				<h1 class="dollar">$29</h1>
+			</div>
+			<div class="list">
+				<ul>
+					<li><h3>4 User</h3></li>
+					<li><h3>10 Web mails</h3></li>
+					<li><h3>Responsive website</h3></li>
+					<li><h3>Free SSL</h3></li>
+				</ul>
+			</div>
+			<div class="btnn3">
+				<button class="btn3 btn2"><h3>Subscribe Now</h3></button>
+			</div>
+		</div>
+		<!-- Box 3 -->
+		<div class="box box3">
+			<div class="name">
+				<h1>Pro Plan</h1>
+				<p>For Enterprise</p>
+				<h1 class="dollar">$49</h1>
+			</div>
+			<div class="list">
+				<ul>
+					<li><h3>Unlimited User</h3></li>
+					<li><h3>Unlimited Web mails</h3></li>
+					<li><h3>Responsive website</h3></li>
+					<li><h3>Free SSL + SEO</h3></li>
+				</ul>
+			</div>
+			<div class="btnn3">
+				<button class="btn3"><h3>Subscribe Now</h3></button>
+			</div>			
+		</div>
+	</div>
+</body>
+</html>
