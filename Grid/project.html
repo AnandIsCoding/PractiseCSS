@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			box-sizing:border-box;
+		}
+		body{
+			width:100%;
+			height:100%;
+			background-color: #ededed;
+			overflow:hidden;
+		}
+		.main{
+			width:100%;
+			height:100%;
+			display:grid;
+			grid-template-rows: repeat(5,1fr);
+			grid-template-columns: repeat(2,1fr);
+		}
+		.blocks{
+			min-height:150px;
+		}
+		.left-top-left{
+		
+			display:flex;
+			padding:40px;
+		}
+		.left{
+			width:50%;			
+		}
+		.righttopmenu{
+			width:50%;
+		}
+	
+
+		.square{
+			height:25px;
+			width:25px;
+			background-color: black;
+			rotate:45deg;
+		}
+		.righttopmenu h6,h4{
+			margin-left:60%;			
+		}
+		.righttopmenu h4{
+			margin-bottom:15px;			
+		}
+		
+		
+		.left-top-right{
+			/* background-color: blue; */
+			grid-row: 1/6;
+			grid-column: 2;
+			
+			overflow:hidden;
+		}
+		video{
+			
+			padding-right:10px;
+			width:100vw;
+			height:100vh;
+			margin-right: 40px;
+		
+			object-fit: inherit;
+		}
+		.left-center{
+			/* background-color:aqua; */
+			grid-row: 2/4;
+			padding:5px;			
+		}
+		.left-center h1{
+			font-size:5.5vw;
+			text-transform: uppercase;
+			font-weight: 500;
+			font-family:Arial, Helvetica, sans-serif;
+			line-height: 6vw;
+		}
+		.left-center h1:nth-child(even){
+			text-align: center;
+		}
+		.left-bottom {
+			/* background-color:chartreuse; */
+		}
+		.left-bottom p{
+			width:70%;
+			padding-top:40px;
+			padding-left: 50px;
+		}
+		.right{
+			background-color:blueviolet;			
+		}
+		.arrow{
+			position:absolute;
+			top:50%;
+			left:48%;
+			transform: translate(-50% -50%);
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			width:70px;
+			height:70px;
+			background-color: orangered;
+			color:white;
+			border-radius:50%;
+		}
+		.arrow span{
+			font-style: 30px;
+			font-weight: 100;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+			<div class="blocks left-top-left">
+				<div class="left">
+					<div class="square"></div>
+				</div>
+				<div class="righttopmenu">
+					<h4>Menu</h4>
+					<h6>Home Page</h6>
+					<h6>Portfolio</h6>
+					<h6>Fashion week @2024</h6>
+					<h6>News/Article</h6>
+					<h6>Contact</h6>
+				</div>
+			</div>
+			<div class="blocks left-top-right">
+				<video src="/Grid/model.mp4" autoplay loop controls></video>
+			</div>
+			<div class="blocks left-center">
+				<h1>Select</h1>
+				<h1>Fashion</h1>
+				<h1>Mod0.5-</h1>
+				<h1>Scene</h1>
+			</div>
+			<div class="blocks left-bottom">
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum dolore natus, exercitationem obcaecati perferendis veritatis dolor iste maiores, perspiciatis distinctio rem libero possimus odit atque autem labore reiciendis ratione tempore.</p>
+			</div>
+			
+			<div class="arrow">
+				<span class="material-symbols-outlined">
+					arrow_forward
+					</span>
+			</div>
+			
+	</div>
+</body>
+</html>
